@@ -1,6 +1,6 @@
 <template>
   <div class="cc"  >
-    <b-card title="Card title" sub-title="Card subtitle">
+    <b-card title="Contact us" sub-title="please fill this form to send us an email">
     <b-card-text>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <p v-if="errors.length">
