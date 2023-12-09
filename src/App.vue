@@ -2,13 +2,39 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">Contact Us</router-link>
     </nav>
     <router-view/>
+<FooterPage/>
+
+    
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import FooterPage from '@/components/FooterPage.vue'
+
+export default {
+  name: 'App',
+
+   data: function () {
+        return {
+          
+        }
+    },
+ 
+components:{
+ FooterPage
+}
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+
+
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,4 +55,13 @@ nav {
     }
   }
 }
+ 
+  
+  
+  
+  
+  
+  
+  
+
 </style>
